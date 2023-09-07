@@ -31,18 +31,13 @@ class Rectangle {
     rotate() {
         // Check if both height and width are defined
         if (this.height && this.width) {
-            // Loop through each row
+            // Loop through each column
             for (let i = 0; i < this.width; i++) {
-                // Print a column of X's with the specified height
+                // Print a row of X's with the specified height
                 console.log('X'.repeat(this.height));
             }
         }
     }
-
-    double() {
-        this.width *= 2;
-        this.height *= 2;
-    }
 }
 
-export default Rectangle
+module.exports = Rectangle;
