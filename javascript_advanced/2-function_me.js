@@ -1,5 +1,5 @@
 const alert = require('alert');
-function welcomeMessage (fullName) {
+function welcomeMessage(fullName) {
     alert('Welcome ' + fullName);
 }
 

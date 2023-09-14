@@ -1,16 +1,16 @@
 const alert = require('alert');
 
 
-const globalVariable  = 'Welcome';
+const globalVariable = 'Welcome';
 
-function outer () {
+function outer() {
     alert(globalVariable);
     const course = 'Holberton';
-    function inner () {
+    function inner() {
         alert(globalVariable + ' ' + course);
         const exclamation = '!';
 
-        function inception () {
+        function inception() {
             alert(globalVariable + ' ' + course + exclamation);
         }
         inception();

@@ -1,5 +1,5 @@
 
-function changeMode (size, weight, transform, background, color) {
+function changeMode(size, weight, transform, background, color) {
     return function () {
         document.body.style.fontSize = size + 'px';
         document.body.style.fontWeight = weight;
@@ -9,7 +9,7 @@ function changeMode (size, weight, transform, background, color) {
     };
 }
 
-function main () {
+function main() {
     const spooky = changeMode(9, 'bold', 'uppercase', 'pink', 'green');
     const darkMode = changeMode(12, 'bold', 'capitalize', 'black', 'white');
     const screamMode = changeMode(12, 'normal', 'lowercase', 'white', 'black');
